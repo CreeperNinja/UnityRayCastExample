@@ -45,7 +45,7 @@ public class RayCastTest : MonoBehaviour
 
             //Spawns a door
             GameObject newDoor = Instantiate(doorPrefab,hit.point, hit.collider.transform.rotation, hit.collider.transform.parent);
-            newDoor.transform.position -= newDoor.transform.forward / 10;
+            newDoor.transform.position += newDoor.transform.forward / 20;
 
             //Changes the color of the hit object
             MeshRenderer hitObjectMesh = hit.collider.transform.GetComponent<MeshRenderer>();
